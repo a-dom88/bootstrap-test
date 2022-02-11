@@ -1,0 +1,51 @@
+* {
+  font-family: monospace;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(153 153 153);
+}
+
+/* Colors
+orange : 255 102 2
+grey: 153 153 153 */
+
+/* Navbar */
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+#logo,
+.img-responsive {
+  display: inline-block;
+  margin-top: -10px;
+  margin-left: 10px;
+  height: 30px;
+}
+
+h3.logo {
+  display: inline-block;
+  margin: auto;
+  color: white;
+}
+
+h3.logo:hover {
+  color: rgb(255 102 2);
+}
+
+.align-icon {
+  margin-right: 5px;
+}
+
+/* re-size contact icon */
+.fa-mobile {
+  transform: scale(1.5);
+}
+
+.aaa {
+  color: red;
+}

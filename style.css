@@ -73,8 +73,6 @@ h3.logo:hover {
   color: white;
 }
 
-element.style {
-}
 .dropdown-menu > li > a {
   color: white;
 }
@@ -93,4 +91,42 @@ element.style {
 .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: #222;
   color: rgb(255 102 2);
+}
+
+.container {
+  height: 800px;
+  width: 100%;
+  background-color: rgb(153 153 153);
+  position: relative;
+  padding: 100px 150px;
+}
+
+.container h2 {
+  font-size: 4em;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.scrolltop {
+  position: fixed;
+  bottom: 800px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 30px;
+  background: #fff url(/img/up.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.scrolltop.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 40px;
 }

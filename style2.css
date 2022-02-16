@@ -47,6 +47,10 @@ h3.logo:hover {
   transform: scale(1.5);
 }
 
+.navbar-nav {
+  background-color: white;
+}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -63,7 +67,7 @@ h3.logo:hover {
 }
 
 .navbar-default {
-  border-bottom: 2px solid rgb(57, 140, 248);
+  border-bottom: 3px solid rgb(57, 140, 248);
 }
 
 .dropdown-menu {
@@ -88,6 +92,36 @@ h3.logo:hover {
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: rgb(116, 189, 213);
   color: white;
+}
+
+.navbar,
+.navbar-fixed-top,
+.navbar-default {
+  max-height: 50px;
+}
+
+.nav,
+.navbar-nav,
+.navbar-right {
+  background-color: transparent;
+}
+
+.navbar-default {
+  background-color: white;
+}
+
+.container > .navbar-header {
+  height: 50px;
+  max-height: 50px;
+}
+
+.container {
+  height: 50px;
+  max-height: 50px;
+}
+
+.navbar-brand {
+  float: left;
 }
 
 .container-body {
@@ -192,7 +226,7 @@ h3.logo:hover {
 
 #footer {
   height: auto;
-  background: white !important;
+  background: rgb(243, 243, 243) !important;
 }
 
 #footer h5 {
@@ -276,7 +310,6 @@ h3.logo:hover {
 .quick1:hover {
   margin-left: 25%;
   margin-right: 25%;
-
   color: rgb(57, 140, 248);
 }
 

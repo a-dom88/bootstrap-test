@@ -7,11 +7,13 @@
 .col-md-12 {
   height: auto;
   margin-top: 40px;
+  padding-bottom: 20px;
 }
 
 .col-md-12:hover {
   height: auto;
   margin-top: 40px;
+  padding-bottom: 20px;
 }
 
 .btn:focus,
@@ -32,5 +34,25 @@ button:active {
 }
 
 .modal-header {
+  padding-top: 10px;
+  border-bottom: none;
+}
+
+.modal-body {
   padding: 0;
+}
+
+.modal-footer {
+  border-top: none;
+  padding-top: 0;
+}
+
+.modal-footer:hover,
+.modal-content {
+  border-top: none;
+  padding-top: 0;
+}
+
+.modal-title {
+  color: black;
 }

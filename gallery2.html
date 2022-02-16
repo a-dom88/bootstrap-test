@@ -5,21 +5,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Ottica Polifemo</title>
     <!-- CSS Aggiornato minimale e compilato -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <!-- Mio CSS-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="gallery2.css">
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
     <!-- Start Navbar-->
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-        <div class="container-fluid">
+    <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -30,33 +29,37 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img class="img-responsive2" src="/img/logo3.svg" alt="AD" id="logo">
-                    <h3 class="logo">Logo</h3>
+                    <i class="fa fa-eye fa-2x" aria-hidden="true" id="logo"></i>
+                    <!-- <img class="img-responsive2" src="/img/logo3.svg" alt="AD" id="logo"> -->
+                    <h3 class="logo">Polifemo</h3>
+
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html"><i class="fa fa-home align-icon" aria-hidden="true"></i>Home</a></li>
-                    <li><a href="aboutus.html"><i class="fa fa-building align-icon" aria-hidden="true"></i>Chi siamo</a>
-                    </li>
-                    <li class="active"><a href="gallery.html"><i class="fa fa-picture-o align-icon"
+                    <li><a href="index2.html"><i class="fa fa-home align-icon" aria-hidden="true"></i>Home</a></li>
+                    <li><a href="aboutus2.html"><i class="fa fa-building align-icon" aria-hidden="true"></i>Chi
+                            siamo</a></li>
+                    <li class="active"><a href="gallery2.html"><i class="fa fa-picture-o align-icon"
                                 aria-hidden="true"></i>Gallery</a></li>
                     <li class="dropdown">
-                        <a href="services.html" class="dropdown-toggle" data-toggle="dropdown"><i
-                                class="fa fa-cogs align-icon" aria-hidden="true"></i>Servizi <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cogs align-icon"
+                                aria-hidden="true"></i>Prodotti<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="drop1">Portatili</a></li>
+                            <li><a href="#">Montature</a></li>
                             <li class="divider"></li>
-                            <li><a href="#" class="drop1">Stampanti</a></li>
+                            <li><a href="#">Lenti</a></li>
                             <li class="divider"></li>
-                            <li><a href="#" class="drop1">Iphone</a></li>
+                            <li><a href="#">Custodie</a></li>
                             <li class="divider"></li>
-                            <li><a href="#" class="drop1">Cabinet</a></li>
+                            <li><a href="#">Lenti a contatto</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Detergenti</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html"><i class="fa fa-mobile align-icon" aria-hidden="true"></i>Contatti</a>
+                    <li><a href="contact2.html"><i class="fa fa-mobile align-icon" aria-hidden="true"></i>Contatti</a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -64,7 +67,7 @@
     </nav>
     <!-- End Navbar-->
 
-    <!-- ScrollToTop-->
+    <!--  ScrollToTop-->
     <div class="scrolltop" onclick="scrollToTop();"></div>
     <!-- ScrollToTop-->
 
@@ -98,7 +101,7 @@
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
                                 data-image="/img/andreas-palmer-UJSjxFNLFWY-unsplash.jpg" data-target="#image-gallery">
                                 <img class="img-thumbnail" src="/img/andreas-palmer-UJSjxFNLFWY-unsplash.jpg"
                                     alt="Another alt text">
@@ -108,7 +111,7 @@
 
                     <div class="row">
                         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
                                 data-image="/img/andreas-palmer-UJSjxFNLFWY-unsplash.jpg" data-target="#image-gallery">
                                 <img class="img-thumbnail" src="/img/andreas-palmer-UJSjxFNLFWY-unsplash.jpg"
                                     alt="Another alt text">
@@ -145,8 +148,8 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h4 class="modal-title" id="image-gallery-title"></h4>
-                                    <button type="button" class="close" data-dismiss="modal"><span
-                                            aria-hidden="true">×</span><span class="sr-only">Close</span>
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"
+                                            class="x">×</span><span class="sr-only">Close</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
@@ -172,18 +175,18 @@
 
     <!-- Footer -->
     <section id="footer">
-        <div class="container-fluid container-2">
+        <div class="container-fluid">
             <div class="row text-center text-xs-center text-sm-left text-md-left">
                 <div class="col-xs-12 col-sm-4">
                     <div class="quick1">
                         <h5>Quick links</h5>
                     </div>
                     <ul class="list-unstyled quick-links">
-                        <li><a href="https://www.fiverr.com/share/qb8D02">Home</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02">About</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02">FAQ</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02">Get Started</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02">Videos</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Get Started</a></li>
+                        <li><a href="">Videos</a></li>
+                        <li><a href="">Home</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-4">
@@ -191,11 +194,11 @@
                         <h5>Quick links</h5>
                     </div>
                     <ul class="list-unstyled quick-links">
-                        <li><a href="https://www.fiverr.com/share/qb8D02">Home</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02">About</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02">FAQ</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02">Get Started</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02">Videos</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Get Started</a></li>
+                        <li><a href="">Videos</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-4">
@@ -203,27 +206,21 @@
                         <h5>Quick links</h5>
                     </div>
                     <ul class="list-unstyled quick-links">
-                        <li><a href="https://www.fiverr.com/share/qb8D02">Home</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02">About</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02">FAQ</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02">Get Started</a></li>
-                        <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by">Imprint</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Get Started</a></li>
+                        <li><a href="">FAQ</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 mt-2 mt-sm-5">
                     <ul class="list-unstyled list-inline social text-center">
-                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
-                                    class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
-                                    class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
-                                    class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
-                                    class="fa fa-google-plus"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i
-                                    class="fa fa-envelope"></i></a></li>
+                        <li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href=""><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-envelope"></i></a></li>
                     </ul>
                 </div>
                 <hr>

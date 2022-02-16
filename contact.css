@@ -1,0 +1,58 @@
+#contact {
+  padding-top: 40px;
+}
+
+/*Font-awesome integration*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/*Google font integration*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#contact {
+  font-family: 'Roboto', sans-serif;
+}
+
+#contact .well {
+  border-radius: 0;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+#contact .form-control {
+  border-radius: 5p;
+  border: 2px solid rgb(255 102 2);
+}
+
+::placeholder {
+  color: rgb(255 102 2);
+  opacity: 1;
+}
+
+#contact button {
+  border-radius: 0;
+  border: 2px solid rgb(255 102 2);
+}
+
+#contact .row {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #contact iframe {
+    margin-bottom: 15px;
+  }
+}
+
+h4,
+h3 {
+  color: white;
+}
+
+#wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.map {
+  border-radius: 5px;
+}

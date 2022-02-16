@@ -1,0 +1,25 @@
+#wrapper {
+  height: auto;
+  background-color: rgb(216, 216, 216);
+  margin-bottom: 0;
+  padding: 40px 20px;
+}
+
+.col-md-4 {
+  height: auto;
+  margin-top: 5%;
+}
+
+.col-md-8 {
+  height: auto;
+  margin-top: 5%;
+}
+
+.missionh1 {
+  margin: 0;
+  padding: 0;
+}
+
+.missionp {
+  text-align: justify;
+}

@@ -1,0 +1,32 @@
+#wrapper {
+  height: auto;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+.col-md-12 {
+  height: auto;
+  margin-top: 40px;
+}
+
+.col-md-12:hover {
+  height: auto;
+  margin-top: 40px;
+}
+
+.btn:focus,
+.btn:active,
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer {
+  display: block;
+}
+
+.thumb {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

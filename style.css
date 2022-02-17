@@ -304,6 +304,11 @@ section .section-title {
     padding-bottom: 0px;
     margin-bottom: 10px;
   }
+
+  .welcome {
+    margin-top: -50px;
+    font-size: 20px;
+  }
 }
 
 .quick1 {
@@ -318,3 +323,7 @@ section .section-title {
   font-size: 20px;
 }
 /* End Footer */
+
+.carousel {
+  margin-top: 50px;
+}

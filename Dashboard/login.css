@@ -216,8 +216,7 @@
 .fa-money,
 .fa-archive,
 .fa-globe,
-.fa-envelope-o,
-.fa-user-o {
+.fa-envelope-o {
   margin-right: 5px;
 }
 
@@ -247,16 +246,4 @@ a.active {
 
 a:hover {
   text-decoration: none;
-}
-
-button a {
-  text-decoration: none;
-  color: black;
-}
-
-.div1 {
-  margin-top: 40px;
-  height: 20px;
-  width: 100%;
-  background-color: #222;
 }

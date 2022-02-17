@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <!-- CSS Aggiornato minimale e compilato -->
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+    />
+    <!-- START My CSS-->
+    <link rel="stylesheet" href="dashboard.css" />
+    <!-- END My CSS-->
+
+    <!-- START FontAwesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- END FontAwesome CDN-->
+
+    <!-- start font google-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End font google-->
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!-- Navigation -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-ex1-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/Dashboard/login.html">
+            <img src="/img/logo3.svg" alt="LOGO" id="brand-logo" />
+            <h3 id="brand-logo">Logo</h3>
+          </a>
+        </div>
+        <!-- Top Menu Items -->
+        <ul class="nav navbar-right top-nav">
+            <div class="div1"></div>
+        </ul>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav"> 
+              
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+
+      <div id="page-wrapper">
+        <div class="container-fluid">
+          <!-- Page Heading -->
+          <div class="row" id="main">
+            <!-- -->
+            <div class="col-sm-12 col-md-12 well" id="content">
+              <ol class="breadcrumb">
+                <li><a class="active" href="dashboard.html">Login</a></li>
+              </ol>
+            </div>
+
+            <div class="col-md-12 well-cont">
+                <form action="" method="post">
+                    <input type="text" name="utente" id="username" placeholder="username" required>
+                    <input type="password" name="password" id="pwd" placeholder="password" required>
+                </form>
+                <br>
+                <button><a href="/Dashboard/dashboard.html">Login</a></button>
+            </div>
+            <!-- -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+      <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery (necessario per i plugin Javascript di Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Includi tutti i plugin compilati (sotto), o includi solo i file individuali necessari -->
+
+    <!-- JavaScript Aggiornato minimale e compilato -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/Dashboard/javascript/dashboard.js"></script>
+  </body>
+</html>

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>AD</title>
     <!-- CSS Aggiornato minimale e compilato -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <!-- Mio CSS-->
@@ -36,12 +36,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html"><i class="fa fa-home align-icon" aria-hidden="true"></i>Home</a></li>
-                    <li><a href="aboutus.html"><i class="fa fa-building align-icon" aria-hidden="true"></i>Chi siamo</a></li>
-                    <li><a href="gallery.html"><i class="fa fa-picture-o align-icon" aria-hidden="true"></i>Gallery</a></li>
+                    <li class="active"><a href="index.html"><i class="fa fa-home align-icon"
+                                aria-hidden="true"></i>Home</a></li>
+                    <li><a href="aboutus.html"><i class="fa fa-building align-icon" aria-hidden="true"></i>Chi siamo</a>
+                    </li>
+                    <li><a href="gallery.html"><i class="fa fa-picture-o align-icon" aria-hidden="true"></i>Gallery</a>
+                    </li>
                     <li class="dropdown">
-                        <a href="services.html" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cogs align-icon"
-                                aria-hidden="true"></i>Servizi <b class="caret"></b></a>
+                        <a href="services.html" class="dropdown-toggle" data-toggle="dropdown"><i
+                                class="fa fa-cogs align-icon" aria-hidden="true"></i>Servizi <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="#" class="drop1">Portatili</a></li>
                             <li class="divider"></li>
@@ -52,11 +55,37 @@
                             <li><a href="#" class="drop1">Cabinet</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html"><i class="fa fa-mobile align-icon" aria-hidden="true"></i>Contatti</a></li>
-                    <li><a href="/Dashboard/login.html"><i class="fa fa-cog align-icon" aria-hidden="true"></i></a></li>
+                    <li><a href="contact.html"><i class="fa fa-mobile align-icon" aria-hidden="true"></i>Contatti</a>
+                    </li>
+
+                    <!-- Start large modal -->
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><i
+                            class="fa fa-cog align-icon"></i></button>
+
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="well-cont">
+                                    <form action="" method="post">
+                                        <h3 class="lgn-msg">Welcome Back</h3>
+                                        <input type="text" name="utente" id="username" placeholder="username" required>
+                                        <br>
+                                        <br>
+                                        <input type="password" name="password" id="pwd" placeholder="password" required>
+                                    </form>
+                                    <br>
+                                    <button><a href="/Dashboard/dashboard.html" class="lgn">Login</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End large modal -->
+                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
+
     </nav>
     <!-- End Navbar-->
 
@@ -107,6 +136,23 @@
         </a>
     </div>
     <!-- End Carousel-->
+
+
+
+    <div class="imgs">
+        <div class="col-md-12">
+            <div class="row-index">
+                <div class="col-md-3">
+                    <img src="/img/fernando-hernandez-JdoofvUDUwc-unsplash.jpg" alt="" class="img-index">
+                </div>
+                <div class="col-md-3">
+                    <img src="/img/pakata-goh-Ovb-MejXjOg-unsplash.jpg" alt="" class="img-index">
+                </div>
+                <div class="col-md-3"> <img src="/img/fernando-hernandez-JdoofvUDUwc-unsplash.jpg" alt="" class="img-index"></div>
+                <div class="col-md-3"> <img src="/img/pakata-goh-Ovb-MejXjOg-unsplash.jpg" alt="" class="img-index"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Start wrapper-->
 

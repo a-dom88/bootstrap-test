@@ -1,212 +1,191 @@
 <!DOCTYPE html>
 <html lang="it-IT">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dashboard</title>
-    <!-- CSS Aggiornato minimale e compilato -->
-    <link
-      rel="stylesheet"
-      href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
-    />
-    <!-- START My CSS-->
-    <link rel="stylesheet" href="dashboard.css" />
-    <!-- END My CSS-->
 
-    <!-- START FontAwesome CDN-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- END FontAwesome CDN-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard</title>
+  <!-- CSS Aggiornato minimale e compilato -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+  <!-- START My CSS-->
+  <link rel="stylesheet" href="dashboard.css" />
+  <!-- END My CSS-->
 
-    <!-- start font google-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- End font google-->
-  </head>
+  <!-- START FontAwesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- END FontAwesome CDN-->
 
-  <body>
-    <div id="wrapper">
-      <!-- Navigation -->
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target=".navbar-ex1-collapse"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="dashboard.html">
-            <img src="/img/logo3.svg" alt="LOGO" id="brand-logo" />
-            <h3 id="brand-logo">Logo</h3>
+  <!-- start font google-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- End font google-->
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="dashboard.html">
+          <img src="/img/logo3.svg" alt="LOGO" id="brand-logo" />
+          <h3 id="brand-logo">Logo</h3>
+        </a>
+      </div>
+      <!-- Top Menu Items -->
+      <ul class="nav navbar-right top-nav">
+        <li>
+          <a href="#" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="Stats"><i
+              class="fa fa-bar-chart-o"></i>
           </a>
-        </div>
-        <!-- Top Menu Items -->
-        <ul class="nav navbar-right top-nav">
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b class="fa fa-angle-down"></b></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#"><i class="fa fa-fw fa-user"></i>Modifica profilo</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Messaggi</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#"><i class="fa fa-fw fa-cog"></i>Cambio password</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="/index.html"><i class="fa fa-globe" aria-hidden="true"></i>Al sito</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-fw fa-power-off"></i> Esci</button>
+            </li>
+          
+          </ul>
+          <!-- Start large modal -->
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="well-cont2">
+                  <form action="" method="post">
+                      <h3 class="lgn-msg">Arrivederci</h3>
+                      <input type="text" name="utente" id="username" placeholder="username" required>
+                      <br>
+                      <br>
+                      <input type="password" name="password" id="pwd" placeholder="password" required>
+                  </form>
+                  <br>
+                  <button><a href="/Dashboard/dashboard.html" class="lgn">Login</a></button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- End large modal -->
+        </li>
+      </ul>
+      <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
           <li>
-            <a
-              href="#"
-              data-placement="bottom"
-              data-toggle="tooltip"
-              href="#"
-              data-original-title="Stats"
-              ><i class="fa fa-bar-chart-o"></i>
-            </a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-              >Admin <b class="fa fa-angle-down"></b
-            ></a>
-            <ul class="dropdown-menu">
+            <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-bar-chart-o"
+                aria-hidden="true"></i> Amministrazione
+              <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+            <ul id="submenu-1" class="collapse">
               <li>
-                <a href="#"><i class="fa fa-fw fa-user"></i>Modifica profilo</a>
+                <a href="#"><i class="fa fa-angle-double-right"></i> Fatture</a>
               </li>
-              <li class="divider"></li>
               <li>
-                <a href="#"
-                  ><i class="fa fa-envelope-o" aria-hidden="true"></i
-                  >Messaggi</a
-                >
+                <a href="#"><i class="fa fa-angle-double-right"></i> Buste Paga</a>
               </li>
-              <li class="divider"></li>
               <li>
-                <a href="#"><i class="fa fa-fw fa-cog"></i>Cambio password</a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="/index.html"
-                  ><i class="fa fa-globe" aria-hidden="true"></i>Al sito</a
-                >
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="/Dashboard/login.html"><i class="fa fa-fw fa-power-off"></i> Logout</a>
+                <a href="#"><i class="fa fa-angle-double-right"></i> Cig</a>
               </li>
             </ul>
           </li>
-        </ul>
-        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav side-nav">
-            <li>
-              <a href="#" data-toggle="collapse" data-target="#submenu-1"
-                ><i class="fa fa-bar-chart-o" aria-hidden="true"></i> Amministrazione
-                <i class="fa fa-fw fa-angle-down pull-right"></i
-              ></a>
-              <ul id="submenu-1" class="collapse">
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-angle-double-right"></i> Fatture</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-angle-double-right"></i> Buste Paga</a
-                  >
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-angle-double-right"></i> Cig</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" data-toggle="collapse" data-target="#submenu-2"
-                ><i class="fa fa-user-o" aria-hidden="true"></i></i> Personale
-                <i class="fa fa-fw fa-angle-down pull-right"></i
-              ></a>
-              <ul id="submenu-2" class="collapse">
-                <li>
-                  <a href="personale.html"
-                    ><i class="fa fa-angle-double-right"></i> Ferie</a
-                  >
-                </li>
-                <li>
-                  <a href="personale.html"
-                    ><i class="fa fa-angle-double-right"></i> Permessi</a
-                  >
-                </li>
-                <li>
-                  <a href="personale.html"
-                    ><i class="fa fa-angle-double-right"></i> Buste Paga</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-                <a href="#" data-toggle="collapse" data-target="#submenu-3"
-                  ><i class="fa fa-archive" aria-hidden="true"></i> Fornitori
-                  <i class="fa fa-fw fa-angle-down pull-right"></i
-                ></a>
-                <ul id="submenu-3" class="collapse">
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-angle-double-right"></i> Fatture attive</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-angle-double-right"></i> Fatture passive</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-angle-double-right"></i> Note di credito</a>
-                  </li>
-                </ul>
+          <li>
+            <a href="#" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-user-o"
+                aria-hidden="true"></i></i> Personale
+              <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+            <ul id="submenu-2" class="collapse">
+              <li>
+                <a href="personale.html"><i class="fa fa-angle-double-right"></i> Ferie</a>
               </li>
-            <li>
-              <a href="#"><i class="fa fa-fw fa-user-plus"></i> MENU 3</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-fw fa-paper-plane-o"></i> MENU 4</a>
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa fa-fw fa fa-question-circle"></i> Impostazioni</a
-              >
-            </li>
-           
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </nav>
+              <li>
+                <a href="personale.html"><i class="fa fa-angle-double-right"></i> Permessi</a>
+              </li>
+              <li>
+                <a href="personale.html"><i class="fa fa-angle-double-right"></i> Buste Paga</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" data-toggle="collapse" data-target="#submenu-3"><i class="fa fa-archive" aria-hidden="true"></i>
+              Fornitori
+              <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+            <ul id="submenu-3" class="collapse">
+              <li>
+                <a href="#"><i class="fa fa-angle-double-right"></i> Fatture attive</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-angle-double-right"></i> Fatture passive</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-angle-double-right"></i> Note di credito</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-fw fa-user-plus"></i> MENU 3</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-fw fa-paper-plane-o"></i> MENU 4</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-fw fa fa-question-circle"></i> Impostazioni</a>
+          </li>
 
-      <div id="page-wrapper">
-        <div class="container-fluid">
-          <!-- Page Heading -->
-          <div class="row" id="main">
-            <!-- -->
-            <div class="col-sm-12 col-md-12 well" id="content">
-              <ol class="breadcrumb">
-                <li><a class="active" href="dashboard.html">Home</a></li>
-              </ol>
-            </div>
-
-            <div class="col-md-12 well-cont"></div>
-            <!-- -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container-fluid -->
+        </ul>
       </div>
-      <!-- /#page-wrapper -->
-    </div>
-    <!-- /#wrapper -->
-    <!-- jQuery (necessario per i plugin Javascript di Bootstrap) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Includi tutti i plugin compilati (sotto), o includi solo i file individuali necessari -->
+      <!-- /.navbar-collapse -->
+    </nav>
 
-    <!-- JavaScript Aggiornato minimale e compilato -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="/Dashboard/javascript/dashboard.js"></script>
-  </body>
+    <div id="page-wrapper">
+      <div class="container-fluid">
+        <!-- Page Heading -->
+        <div class="row" id="main">
+          <!-- -->
+          <div class="col-sm-12 col-md-12 well" id="content">
+            <ol class="breadcrumb">
+              <li><a class="active" href="dashboard.html">Home</a></li>
+            </ol>
+          </div>
+
+          <div class="col-md-12 well-cont"></div>
+          <!-- -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+  <!-- jQuery (necessario per i plugin Javascript di Bootstrap) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Includi tutti i plugin compilati (sotto), o includi solo i file individuali necessari -->
+
+  <!-- JavaScript Aggiornato minimale e compilato -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="/Dashboard/javascript/dashboard.js"></script>
+</body>
+
 </html>

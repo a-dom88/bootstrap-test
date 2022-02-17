@@ -21,6 +21,7 @@
   width: 100%;
   padding: 0;
   background-color: #fff;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -31,11 +32,23 @@
   #page-wrapper {
     padding: 22px 10px;
   }
+
+  /* .well-cont {
+    margin-top: 80px;
+  } */
 }
 
 @media (max-width: 768px) {
   #page-wrapper {
     margin-top: 120px;
+  }
+
+  .well {
+    margin-top: 50px;
+    height: 20px;
+  }
+  .well-cont {
+    margin-top: 50px;
   }
 }
 
@@ -96,7 +109,6 @@
     border-top: 1px rgba(0, 0, 0, 0.5) solid;
     overflow-y: auto;
     background-color: #222;
-    /*background-color: #5A6B7D;*/
     bottom: 0;
     overflow-x: hidden;
     padding-bottom: 40px;
@@ -260,3 +272,206 @@ button a {
   width: 100%;
   background-color: #222;
 }
+
+/* Start Modal */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #000;
+}
+
+.modal-content {
+  background-color: rgb(255, 102, 2);
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  text-align: center;
+  background-color: rgb(255, 102, 2);
+  padding-bottom: 25px;
+}
+
+@media (max-width: 400px) {
+  div.modal-content {
+    height: 200px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    background-color: rgb(255, 102, 2);
+  }
+
+  form {
+    margin-left: 10%;
+    margin-right: auto;
+  }
+
+  input {
+    width: 100px;
+    border-radius: 5px;
+  }
+
+  .well-cont2 {
+    width: 200px;
+    padding-right: auto;
+    padding-left: auto;
+    padding-bottom: 10px;
+    margin-right: auto;
+  }
+
+  .lgn-msg {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: auto;
+  }
+
+  button {
+    margin-left: 50%;
+  }
+}
+
+/* END MODAL */
+
+.lgn {
+  color: black;
+  text-decoration: none;
+}
+
+.lgn:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.lgn-msg {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  color: black;
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+
+.btn-primary {
+  color: black;
+  margin-top: 0;
+}
+
+button.btn.btn-primary {
+  color: rgb(255, 102, 2);
+  background-color: transparent;
+  margin-top: 0;
+  margin-left: 8px;
+  font-size: 13px;
+}
+
+button.btn.btn-primary:hover {
+  color: white;
+  background-color: rgb(255, 102, 2);
+  margin-top: 0;
+  margin-left: 8px;
+  font-size: 13px;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 7px;
+}
+
+.btn:hover {
+  background-color: rgb(255, 102, 2);
+  border-color: transparent;
+  color: black;
+}
+
+input {
+  width: 250px;
+  border-radius: 5px;
+}
+
+/* Start table */
+
+.row {
+  margin: 10px;
+}
+
+.col-md-3 {
+  height: 500px;
+  background-color: white;
+  border: 1px solid grey;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.col-md-9 {
+  height: 900px;
+  background-color: transparent;
+}
+
+.col-md-3 > .col-md-12 {
+  height: 460px;
+  padding: 0;
+  margin: 0;
+}
+
+.butn {
+  width: 100%;
+  height: 60px;
+  background-color: #222;
+  color: white;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  margin: 0;
+  border-bottom: 1px solid white;
+}
+
+.butn:hover {
+  background-color: rgb(255, 102, 2);
+}
+
+.new {
+  color: white;
+}
+
+.col-md-9 > .col-md-12 {
+  height: 500px;
+  background-color: white;
+  border: 1px solid grey;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.row > .col-md-9 {
+  padding-left: 15px;
+  padding-right: 0px;
+}
+/* End table */
